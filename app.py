@@ -51,7 +51,7 @@ def predict():
         prediction = model.predict(final_features)
         prediction=round(prediction[0][0],2)
 
-    return render_template('home.html',pred="The mileage of the car will be :{0} ".format(prediction))
+        return render_template('home.html',pred="The mileage of the car will be :{0} ".format(prediction))
 
 
 
